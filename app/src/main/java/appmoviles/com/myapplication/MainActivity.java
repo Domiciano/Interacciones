@@ -20,13 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         labelTv = findViewById(R.id.labelTv);
         nameEt = findViewById(R.id.nameEt);
         actionBtn = findViewById(R.id.actionBtn);
-
         actionBtn.setOnClickListener(
-
                 (v) -> {
                     String name = nameEt.getText().toString();
                     //labelTv.setText(name);
